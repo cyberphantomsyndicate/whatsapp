@@ -29,12 +29,12 @@ def log_output(message, error=False):
         print(f"{GREEN}[INFO] {message}{RESET}")
     time.sleep(random.uniform(1, 2))  # Simulate slight delay in logs
 
-# New function: Simulate Instagram ID Input (for school project context)
-def enter_instagram_id():
-    print(f"{YELLOW}[INFO] Please enter the Instagram ID (for educational purposes only)...{RESET}")
-    instagram_id = input("Enter Instagram username: ")  # Simulate input for Instagram username
-    log_output(f"Instagram ID entered: {instagram_id}", error=False)
-    return instagram_id
+# New function: Simulate WhatsApp Number Input (for educational purposes only)
+def enter_whatsapp_number():
+    print(f"{YELLOW}[INFO] Please enter the WhatsApp number (for educational purposes only)...{RESET}")
+    whatsapp_number = input("Enter WhatsApp number (include country code): ")  # Simulate input for WhatsApp number
+    log_output(f"WhatsApp number entered: {whatsapp_number}", error=False)
+    return whatsapp_number
 
 # Description: **Network Scanning** – The attacker scans the network to discover vulnerable devices or open ports.
 def simulate_network_scanning():
@@ -67,16 +67,16 @@ def simulate_password_cracking():
     log_output(f"Password cracked successfully! Access to target account gained.", error=False)
 
 # Description: **Simulate Phishing Attack** – The attacker sends a phishing email to steal credentials.
-def simulate_phishing_attack(instagram_id):
-    print(f"{YELLOW}[INFO] Sending phishing email to target Instagram account: {instagram_id}...{RESET}")
+def simulate_phishing_attack(whatsapp_number):
+    print(f"{YELLOW}[INFO] Sending phishing message to target WhatsApp number: {whatsapp_number}...{RESET}")
     time.sleep(random.uniform(3, 5))  # Simulate phishing delay
 
-    log_output("Phishing email sent. Waiting for target to click link...", error=False)
+    log_output("Phishing message sent. Waiting for target to click the link...", error=False)
     time.sleep(random.uniform(4, 6))
 
     # Simulating successful phishing response
     if random.random() > 0.2:  # 80% chance of success
-        log_output(f"Target with Instagram ID {instagram_id} clicked the phishing link. Credentials stolen.", error=False)
+        log_output(f"Target with WhatsApp number {whatsapp_number} clicked the phishing link. Credentials stolen.", error=False)
     else:
         log_output("[ERROR] Phishing attack failed. Retrying...", error=True)
         time.sleep(random.uniform(4, 6))
@@ -119,7 +119,7 @@ def simulate_file_transfer():
     
     log_output(f"File transfer of {file_name} completed successfully.", error=False)
 
-# Description: **Cloud Data Upload** – The attacker uploads stolen data to a fake cloud service.
+# Description: **Simulating Cloud Data Upload** – The attacker uploads stolen data to a fake cloud service.
 def simulate_data_transfer_to_cloud():
     log_output("Starting data transfer to Cyberphantomsyndicate Cloud...", error=False)
     time.sleep(random.uniform(3, 5))
@@ -132,14 +132,14 @@ def simulate_data_transfer_to_cloud():
 
     log_output("Data upload complete.", error=False)
 
-# Description: ** Device Information Theft** – The attacker collects device-specific data.
+# Description: **Simulating Device Information Theft** – The attacker collects device-specific data.
 def simulate_device_info_theft():
     print(f"{YELLOW}[INFO] Stealing device information (IP, MAC, OS version)...{RESET}")
     time.sleep(random.uniform(3, 5))  # Simulate info theft delay
 
     log_output("Device information successfully exfiltrated. IP, MAC, OS details saved.", error=False)
 
-# Description: **Device Infection** – The attacker simulates infecting the device with malware.
+# Description: **Simulating Fake Device Infection** – The attacker simulates infecting the device with malware.
 def simulate_fake_device_infection():
     print(f"{YELLOW}[INFO] Simulating device infection with fake malware...{RESET}")
     time.sleep(random.uniform(3, 5))  # Simulate infection delay
@@ -148,12 +148,12 @@ def simulate_fake_device_infection():
     time.sleep(random.uniform(3, 6))  # Simulate the execution of the malware payload
     log_output("Payload executed successfully. Device compromised.", error=False)
 
-# Description: **Full Attack Sequence** – The attacker performs the full attack.
+# Description: **Simulating Full Attack Sequence** – The attacker performs the full attack.
 def simulate_full_attack():
     display_logo()
 
-    # Step 1: Enter Instagram ID (for educational purposes)
-    instagram_id = enter_instagram_id()
+    # Step 1: Enter WhatsApp number (for educational purposes)
+    whatsapp_number = enter_whatsapp_number()
 
     # Step 2: Scan the network
     simulate_network_scanning()
@@ -164,8 +164,8 @@ def simulate_full_attack():
     # Step 4: Crack passwords
     simulate_password_cracking()
 
-    # Step 5: Conduct phishing attack with Instagram ID
-    simulate_phishing_attack(instagram_id)
+    # Step 5: Conduct phishing attack with WhatsApp number
+    simulate_phishing_attack(whatsapp_number)
 
     # Step 6: Activate keylogger
     simulate_keylogging()
@@ -186,7 +186,7 @@ def simulate_full_attack():
     simulate_fake_device_infection()
 
     # Final Message
-    log_output("Attack complete. All steps executed successfully.", error=False)
+    log_output("Attackcomplete. All steps executed successfully.", error=False)
 
 # Run the full attack simulation
 if __name__ == "__main__":
