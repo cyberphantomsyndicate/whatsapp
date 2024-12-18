@@ -132,4 +132,52 @@ def simulate_device_info_theft():
 
     log_output("Device information successfully exfiltrated. IP, MAC, OS details saved.", error=False)
 
-# Description: **Simulating Fake Device Infection** –
+# Description: **Simulating Fake Device Infection** – The attacker simulates infecting the device with malware.
+def simulate_fake_device_infection():
+    print(f"{YELLOW}[INFO] Simulating device infection with fake malware...{RESET}")
+    time.sleep(random.uniform(3, 5))  # Simulate infection delay
+
+    log_output("Device infected with fake malware. Executing payload...", error=False)
+    time.sleep(random.uniform(3, 6))  # Simulate the execution of the malware payload
+    log_output("Payload executed successfully. Device compromised.", error=False)
+
+# Description: **Simulating Full Attack Sequence** – The attacker performs the full attack.
+def simulate_full_attack():
+    display_logo()
+
+    # Step 1: Scan the network
+    simulate_network_scanning()
+
+    # Step 2: Exploit a vulnerability
+    simulate_vulnerability_exploit()
+
+    # Step 3: Crack passwords
+    simulate_password_cracking()
+
+    # Step 4: Conduct phishing attack
+    simulate_phishing_attack()
+
+    # Step 5: Activate keylogger
+    simulate_keylogging()
+
+    # Step 6: Attempt privilege escalation
+    simulate_privilege_escalation()
+
+    # Step 7: Transfer stolen files
+    simulate_file_transfer()
+
+    # Step 8: Upload stolen data to cloud
+    simulate_data_transfer_to_cloud()
+
+    # Step 9: Steal device information
+    simulate_device_info_theft()
+
+    # Step 10: Simulate device infection
+    simulate_fake_device_infection()
+
+    # Final Message
+    log_output("Attack simulation complete. All steps executed successfully.", error=False)
+
+# Run the full attack simulation
+if __name__ == "__main__":
+    simulate_full_attack()
