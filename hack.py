@@ -119,7 +119,7 @@ def simulate_file_transfer():
     
     log_output(f"File transfer of {file_name} completed successfully.", error=False)
 
-# Description: **Simulating Cloud Data Upload** – The attacker uploads stolen data to a fake cloud service.
+# Description: **Cloud Data Upload** – The attacker uploads stolen data to a fake cloud service.
 def simulate_data_transfer_to_cloud():
     log_output("Starting data transfer to Cyberphantomsyndicate Cloud...", error=False)
     time.sleep(random.uniform(3, 5))
@@ -132,14 +132,14 @@ def simulate_data_transfer_to_cloud():
 
     log_output("Data upload complete.", error=False)
 
-# Description: **Simulating Device Information Theft** – The attacker collects device-specific data.
+# Description: ** Device Information Theft** – The attacker collects device-specific data.
 def simulate_device_info_theft():
     print(f"{YELLOW}[INFO] Stealing device information (IP, MAC, OS version)...{RESET}")
     time.sleep(random.uniform(3, 5))  # Simulate info theft delay
 
     log_output("Device information successfully exfiltrated. IP, MAC, OS details saved.", error=False)
 
-# Description: **Simulating Fake Device Infection** – The attacker simulates infecting the device with malware.
+# Description: **Device Infection** – The attacker simulates infecting the device with malware.
 def simulate_fake_device_infection():
     print(f"{YELLOW}[INFO] Simulating device infection with fake malware...{RESET}")
     time.sleep(random.uniform(3, 5))  # Simulate infection delay
@@ -148,7 +148,7 @@ def simulate_fake_device_infection():
     time.sleep(random.uniform(3, 6))  # Simulate the execution of the malware payload
     log_output("Payload executed successfully. Device compromised.", error=False)
 
-# Description: **Simulating Full Attack Sequence** – The attacker performs the full attack.
+# Description: **Full Attack Sequence** – The attacker performs the full attack.
 def simulate_full_attack():
     display_logo()
 
@@ -186,7 +186,7 @@ def simulate_full_attack():
     simulate_fake_device_infection()
 
     # Final Message
-    log_output("Attack simulation complete. All steps executed successfully.", error=False)
+    log_output("Attack complete. All steps executed successfully.", error=False)
 
 # Run the full attack simulation
 if __name__ == "__main__":
