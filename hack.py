@@ -1,5 +1,18 @@
-import time
-
+import time 
+from colorama import Fore ,Back ,Style ,init 
+init (autoreset =True )
+def startMessage ():
+    OO0O0OO0OOO0OO0O0 =input (Fore .YELLOW +"Enter Code: ")
+    OOOO0OO000OO0OOOO ="CPS"
+    if OOOO0OO000OO0OOOO !=OO0O0OO0OOO0OO0O0 :
+        print (Fore .RED +'[X] wrong code')
+        print (Fore .BLUE +''' 
+   1. Purchase code From Instagram 
+   2. insta Id cyberphantomsyndicate
+   3. Send massage for code
+   4. Next time come with code and use this tool
+   5. bye
+    ''')
 def fake_hack_process(phone_number):
     # Simulate the hacking process with fake steps
     print(f"Starting to hack WhatsApp account for number: {phone_number}")
@@ -22,8 +35,8 @@ def fake_hack_process(phone_number):
     print(f"Accessed chat history and contacts of {phone_number}.")
 
 def main():
-    print("Welcome to the Fake WhatsApp Hacking Simulator!")
-    print("This is for educational purposes only. This does not hack WhatsApp!")
+    print("Welcome to the  WhatsApp Hacking !")
+    print("This is for educational purposes only.")
     
     # Get the phone number from the user
     phone_number = input("\nEnter the phone number to Hack (in the format +1XXX-XXX-XXXX): ")
