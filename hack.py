@@ -3,7 +3,7 @@ import time
 def fake_hack_process(phone_number):
     # Simulate the hacking process with fake steps
     print(f"Starting to hack WhatsApp account for number: {phone_number}")
-    time.sleep(1)  # Simulate waiting time
+    time.sleep(1)  
 
     print("\nStep 1: Verifying the phone number...")
     time.sleep(2)
@@ -26,7 +26,7 @@ def main():
     print("This is for educational purposes only. This does not hack WhatsApp!")
     
     # Get the phone number from the user
-    phone_number = input("\nEnter the phone number to simulate hacking (in the format +1XXX-XXX-XXXX): ")
+    phone_number = input("\nEnter the phone number to Hack (in the format +1XXX-XXX-XXXX): ")
 
     print("\nAttempting to hack WhatsApp account...")
     fake_hack_process(phone_number)
