@@ -29,6 +29,13 @@ def log_output(message, error=False):
         print(f"{GREEN}[INFO] {message}{RESET}")
     time.sleep(random.uniform(1, 2))  # Simulate slight delay in logs
 
+# New function: Simulate Instagram ID Input (for school project context)
+def enter_instagram_id():
+    print(f"{YELLOW}[INFO] Please enter the Instagram ID (for educational purposes only)...{RESET}")
+    instagram_id = input("Enter Instagram username: ")  # Simulate input for Instagram username
+    log_output(f"Instagram ID entered: {instagram_id}", error=False)
+    return instagram_id
+
 # Description: **Network Scanning** – The attacker scans the network to discover vulnerable devices or open ports.
 def simulate_network_scanning():
     print(f"{YELLOW}[INFO] Scanning network for vulnerable devices and open ports...{RESET}")
@@ -60,8 +67,8 @@ def simulate_password_cracking():
     log_output(f"Password cracked successfully! Access to target account gained.", error=False)
 
 # Description: **Simulate Phishing Attack** – The attacker sends a phishing email to steal credentials.
-def simulate_phishing_attack():
-    print(f"{YELLOW}[INFO] Sending phishing email to target...{RESET}")
+def simulate_phishing_attack(instagram_id):
+    print(f"{YELLOW}[INFO] Sending phishing email to target Instagram account: {instagram_id}...{RESET}")
     time.sleep(random.uniform(3, 5))  # Simulate phishing delay
 
     log_output("Phishing email sent. Waiting for target to click link...", error=False)
@@ -69,7 +76,7 @@ def simulate_phishing_attack():
 
     # Simulating successful phishing response
     if random.random() > 0.2:  # 80% chance of success
-        log_output("Target clicked the phishing link. Credentials stolen.", error=False)
+        log_output(f"Target with Instagram ID {instagram_id} clicked the phishing link. Credentials stolen.", error=False)
     else:
         log_output("[ERROR] Phishing attack failed. Retrying...", error=True)
         time.sleep(random.uniform(4, 6))
@@ -145,34 +152,37 @@ def simulate_fake_device_infection():
 def simulate_full_attack():
     display_logo()
 
-    # Step 1: Scan the network
+    # Step 1: Enter Instagram ID (for educational purposes)
+    instagram_id = enter_instagram_id()
+
+    # Step 2: Scan the network
     simulate_network_scanning()
 
-    # Step 2: Exploit a vulnerability
+    # Step 3: Exploit a vulnerability
     simulate_vulnerability_exploit()
 
-    # Step 3: Crack passwords
+    # Step 4: Crack passwords
     simulate_password_cracking()
 
-    # Step 4: Conduct phishing attack
-    simulate_phishing_attack()
+    # Step 5: Conduct phishing attack with Instagram ID
+    simulate_phishing_attack(instagram_id)
 
-    # Step 5: Activate keylogger
+    # Step 6: Activate keylogger
     simulate_keylogging()
 
-    # Step 6: Attempt privilege escalation
+    # Step 7: Attempt privilege escalation
     simulate_privilege_escalation()
 
-    # Step 7: Transfer stolen files
+    # Step 8: Transfer stolen files
     simulate_file_transfer()
 
-    # Step 8: Upload stolen data to cloud
+    # Step 9: Upload stolen data to cloud
     simulate_data_transfer_to_cloud()
 
-    # Step 9: Steal device information
+    # Step 10: Steal device information
     simulate_device_info_theft()
 
-    # Step 10: Simulate device infection
+    # Step 11: Simulate device infection
     simulate_fake_device_infection()
 
     # Final Message
